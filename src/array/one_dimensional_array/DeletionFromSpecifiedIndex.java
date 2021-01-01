@@ -13,7 +13,7 @@ public class DeletionFromSpecifiedIndex {
 	public static int delete(int []arr, int size, int pos) {
 		int numDelete = 0;
 
-		if ((arr == null) || (pos < 0) || (pos > size + 1)) {
+		if ((arr == null) || (pos < 0) || (pos > size)) {
 			System.out.println("Invalid Position!");
 		}
 		else {

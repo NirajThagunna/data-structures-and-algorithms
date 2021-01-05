@@ -1,0 +1,111 @@
+1) Can you pass the negative number as an array size?
+	-> No. You can’t pass the negative integer as an array size. If you pass, there will be no compile time error but you will
+	   get NegativeArraySizeException at run time.
+	   
+2) Can you change the size of the array once you define it? OR Can you insert or delete the elements after creating an array?
+	-> No, You can’t change the size of the array once you define it. 
+	-> You can not insert or delete the elements after creating an array. Only you can do is change the value of the elements.
+	
+3) What is an anonymous array? Give example?
+	-> Anonymous array is an array without reference. For example,
+
+		public class MainClass
+		{
+		    public static void main(String[] args)
+		    {
+		        //Creating anonymous arrays
+		  
+		        System.out.println(new int[]{1, 2, 3, 4, 5}.length);    //Output : 5
+		  
+		        System.out.println(new int[]{21, 14, 65, 24, 21}[1]);   //Output : 14
+		    }
+		}
+		
+4) What is the difference between int[] a and int a[] ?
+	-> Both are the legal methods to declare the arrays in java.
+	
+5) There are two array objects of int type. one is containing 100 elements and another one is containing 10 elements. 
+   Can you assign array of 100 elements to an array of 10 elements?
+   
+   	-> Yes, you can assign array of 100 elements to an array of 10 elements provided they should be of same type. 
+   	   While assigning, compiler checks only type of the array not the size.
+   	   
+		public class MainClass
+		{
+		    public static void main(String[] args)
+		    {
+		        int[] a = new int[10];
+		         
+		        int[] b = new int[100];
+		         
+		        a = b;      //Compiler checks only type, not the size
+		    }
+		}
+   
+6) “int a[] = new int[3]{1, 2, 3}” – is it a legal way of defining the arrays in java?
+	-> No. You should not mention the size of the array when you are providing the array contents.
+   
+7) Array:
+	- Arrays are of fixed length.
+	- You can’t change the size of the array once you create it.
+	- Array does not support generics.
+	- You can use arrays to store both primitive types as well as reference types.
+	
+8) ArrayList:
+	- ArrayList is of variable length.
+	- Size of the ArrayList grows and shrinks as you add or remove the elements.
+	- ArrayList supports generics.
+	- You can store only reference types in an ArrayList.
+	
+9) What are the different ways of copying an array into another array?
+There are four methods available in java to copy an array.
+	1) Using for loop
+	2) Using Arrays.copyOf() method
+	3) Using System.arraycopy() method
+	4) Using clone() method 
+   
+10) What are jagged arrays in java? Give example?
+	-> Jagged arrays in java are the arrays containing arrays of different length. Jagged arrays are also multidimensional 
+	   arrays. They are also called as ragged arrays.
+	   
+11) How do you check the equality of two arrays in java? OR How do you compare the two arrays in java?
+	-> You can use Arrays.equals() method to compare one dimensional arrays and to compare multidimensional arrays, use 
+	   Arrays.deepEquals() method.
+	   
+12) What is ArrayIndexOutOfBoundsException in java? When it occurs?
+	-> ArrayIndexOutOfBoundsException is a run time exception which occurs when your program tries to access invalid index 
+	   of an array i.e negative index or index higher than the size of the array.
+   
+13) While creating the multidimensional arrays, can you specify an array dimension after an empty dimension?
+	-> No. You can not specify an array dimension after an empty dimension while creating multidimensional arrays. It gives 
+	   compile time error.  
+	   
+14) What value does array elements get, if they are not initialized?
+	-> If we don’t assign values to array elements, and try to access them, compiler does not produce error as in case of 
+	   simple variables. Instead it assigns values which aren’t garbage.
+	-> They get default values.
+	
+		boolean : false
+		int : 0
+		double : 0.0
+		String : null
+		User Defined Type : null
+	
+15) What are the drawbacks of the arrays in java?
+	-> The main drawback of the arrays is that arrays are of fixed size. You can’t change the size of the array once you 
+	   create it. Therefore, you must know how many elements you want in an array before creating it. You can’t insert or 
+	   delete the elements once you create an array. Only you can do is change the value of the elements.
+	   
+	-> Arrays are Strongly Typed.
+	Arrays does not have add or remove methods.
+	We need to mention the size of the array. Fixed length. So there is a chance of memory wastage.
+	To delete an element in an array we need to traverse through out the array so this will reduce performance.
+   
+16) Where does an array stored in memory?
+	-> An array is created in the heap space of JVM memory. Since an array is an object in Java, even if you create array 
+	   locally inside a method or block, an object is always allocated memory from the heap.
+	   
+How to Remove Elements?
+	-> In java we can’t delete an item in 2d arrays. 2-dimensional arrays are nothing but an array of arrays. But there is a
+	   way to remove that element via replacing the places.   
+   

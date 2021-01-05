@@ -31,6 +31,10 @@ to run the program write down:
 		- Traversing
 		- Insertion
 		- Deletion
+	- Two Dimensional Array
+	- Three Dimensional Array
+
+- Notes
 
 ## Contributing
 Keep contributing your idea or programs to this project.

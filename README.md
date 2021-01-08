@@ -34,6 +34,11 @@ to run the program write down:
 	- Two Dimensional Array
 	- Three Dimensional Array
 
+- Linked List
+	- Singly Linked List
+		- Traversing
+		- Insertion
+
 - Notes
 
 ## Contributing

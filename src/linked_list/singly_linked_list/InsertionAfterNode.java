@@ -118,7 +118,7 @@ public class InsertionAfterNode {
 
 		// list.insertNodeAfterGivenNode(list.head.next, 100);
 		list.insertAtSpecifiedPos(4, 100);
-		System.out.println("Linked List After Inserting a new node After a given Node : ");
+		System.out.println("Linked List After Inserting a new node at specified position : ");
 		list.display();
 	}
 }

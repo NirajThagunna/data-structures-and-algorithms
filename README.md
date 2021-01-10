@@ -38,6 +38,9 @@ to run the program write down:
 	- Singly Linked List
 		- Traversing
 		- Insertion
+		- Deletion
+		- Find Length
+		- Reversing
 
 - Notes
 
